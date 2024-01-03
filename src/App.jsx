@@ -32,11 +32,11 @@ function App() {
 
   return (
     <KeyboardControls map={map}>
-     <Leva hidden />
+      <Leva hidden />
       <Canvas shadows camera={{ position: [10, -10, 14], fov: 42 }}>
         <color attach="background" args={["#dbecfb"]} />
         <fog attach="fog" args={["#dbecfb", 30, 40]} />
-        <Suspense>
+        <Suspense fallback={null}>
           <Physics>
             <Experience />
           </Physics>
@@ -44,7 +44,6 @@ function App() {
       </Canvas>
       <Loader />
       {progress === 100 && <Menu />}
-      <Menu />
     </KeyboardControls>
   );
 }

@@ -15,13 +15,16 @@ import {
 import { useGameStore } from "../store";
 import { CharacterController } from "./CharacterController";
 import { Spots } from "./Spots";
-
+import { useRef } from 'react';
 import { Stage } from "./Stage3";
 export const Experience = () => {
   const {currentHangeul} = useGameStore((state) => ({
     currentHangeul: state.currentHangeul,
    
   }));
+
+
+  
 
   return (
     <>
@@ -79,6 +82,8 @@ export const Experience = () => {
           <CylinderCollider position={[0, 0, 0]} args={[0.2, 3.5]} />
          
         </RigidBody>
+
+    
 
         {/* CHARACTER */}
         <CharacterController/>
