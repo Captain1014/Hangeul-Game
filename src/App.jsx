@@ -33,7 +33,7 @@ function App() {
   return (
     <KeyboardControls map={map}>
       <Leva hidden />
-      <Canvas shadows camera={{ position: [10, -10, 14], fov: 42 }}>
+      <Canvas shadows camera={{ position: [10, -12, 14], fov: 42 }}>
         <color attach="background" args={["#dbecfb"]} />
         <fog attach="fog" args={["#dbecfb", 30, 40]} />
         <Suspense fallback={null}>

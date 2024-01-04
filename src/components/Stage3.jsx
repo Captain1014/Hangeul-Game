@@ -33,6 +33,7 @@ const petalsRef2= useRef();
   // Update function for animation
   useFrame((state) => {
     const t = (state.clock.elapsedTime % 12) / 2; // Assumes a 2-second loop duration
+
     petalsRef.current.position.set(1, 4.14 - t * 4, -4.884 - t * 4);
   });
 
@@ -92,7 +93,7 @@ const petalsRef2= useRef();
       <group position={[-82.846, 20.853, 3.142]} rotation={[-Math.PI / 2, 0, 0]} scale={1}>
         <mesh geometry={nodes.Object_2001.geometry} material={materials['Material.002']} position={[9.097, 4.755, 1.902]} rotation={[0.01, 0.084, -0.113]} scale={[2.836, 2.042, 1.361]} />
       </group>
-      <group position={[-96.99, 15.429, 9.533]} rotation={[-Math.PI / 2, 0, 0]}>
+      <group position={[-96.99, 18.429, 9.533]} rotation={[-Math.PI / 2, 0, 0]}>
         <mesh geometry={nodes.Object_2002.geometry} material={materials['Material.003']} position={[1.816, 3.805, -7.28]} scale={[1.786, 0.859, 1.7]} />
       </group>
       <group position={[-58.063, 7.489, -11.698]} rotation={[-Math.PI / 2, 0, 0]}>
@@ -102,7 +103,7 @@ const petalsRef2= useRef();
       <group position={[-113.533, -12.665, 26.087]} rotation={[-Math.PI / 2, 0, 0]} scale={[0.621, 1, 1.078]}>
         <mesh geometry={nodes.Object_2005.geometry} material={materials['lambert3SG.002']} position={[0, -15.882, 11.091]} scale={[1, 1.092, 1]} />
       </group>
-      <group position={[-113.533, -12.665, 26.087]} rotation={[-Math.PI / 2, 0, 0]} scale={[0.621, 1, 1.078]}>
+      <group position={[-105.533, -12.665, 26.087]} rotation={[-Math.PI / 2, 0, 0]} scale={[0.621, 1, 1.078]}>
         <mesh geometry={nodes.Object_2006.geometry} material={materials['lambert3SG.003']} position={[0, -15.882, 11.091]} scale={[1, 1.092, 1]} />
         <mesh geometry={nodes.Object_3001.geometry} material={materials['lambert2SG.001']} position={[0, -15.882, 12.538]} scale={[1, 1.092, 1]} />
         // petals

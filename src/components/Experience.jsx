@@ -41,7 +41,7 @@ export const Experience = () => {
  {/* Stage */}
  <ContactShadows 
       frames={1}
-      position={[0,-0.88, 0]}
+      position={[0,-1.8, 0]}
       scale={40}
       opacity={0.22}
       far={50}
