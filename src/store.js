@@ -9,7 +9,7 @@ export const gameStates = {
 };
 
 export const playAudio = (path, callback) => {
-  const audio = new Audio(`./public/sounds/${path}.mp3`);
+  const audio = new Audio(`./sounds/${path}.mp3`);
   if (callback) {
     audio.addEventListener("ended", callback);
   }
