@@ -1,10 +1,2 @@
-# r3f-vite-starter
-A boilerplate to build R3F projects
-
-```
-yarn
-yarn dev
-```
-
-
-![image](https://user-images.githubusercontent.com/6551176/221732091-23ee52cb-4150-42fa-b998-43628d7a6b0d.png)
+## Hangeul Game
+- This project is a 3D interactive game designed to help users learn Korean characters using technologies such as three.js, react-three-fiber (r3f), and React. The game incorporates audio elements and interactive gameplay to engage users in the learning process.
